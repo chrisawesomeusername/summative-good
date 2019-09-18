@@ -1,0 +1,41 @@
+// burger menu on home \\
+.burger{
+  // width: 40px;
+  // height: 40px;
+  position: absolute;
+  // top: 15px;
+  right: 15px;
+  color: white;
+  display: flex;
+  // align-items: center;
+  font-size: 30px;
+  .fa-bars{
+    // display: flex;
+    // align-items: center;
+    // margin: auto;
+  }
+}
+
+// active icon\\
+.desc-icon{
+  position: absolute;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+.nav-icon{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  img{
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
