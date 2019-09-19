@@ -19,43 +19,6 @@
   font-size: 14px;
   color: white; }
 
-.burger {
-  position: absolute;
-  right: 15px;
-  color: white;
-  display: flex;
-  font-size: 30px; }
-
-.desc-icon {
-  position: absolute;
-  left: 15px;
-  width: 40px;
-  height: 40px; }
-
-.nav-icon {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  display: flex; }
-  .nav-icon img {
-    align-items: center;
-    margin: 0 auto;
-    width: 90%; }
-
-.logo img {
-  width: inherit; }
-
-.bg-img-container {
-  height: 50vh; }
-
-.bg-img {
-  opacity: 0.4;
-  height: 100%;
-  object-fit: cover;
-  max-width: 100vw; }
-
 .top-bar {
   width: 100%;
   height: 10vh;
@@ -67,15 +30,29 @@
     width: 110px;
     display: flex;
     margin-left: 15px; }
+    .top-bar .logo img {
+      width: inherit; }
+  .top-bar .burger {
+    position: absolute;
+    right: 15px;
+    color: white;
+    display: flex;
+    font-size: 30px; }
   .top-bar .drop-menu {
     display: none;
-    z-index: 2;
+    z-index: 1;
     width: 190px;
     position: absolute;
     top: 10vh;
-    right: 0px; }
+    right: 0px;
+    -webkit-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75); }
     .top-bar .drop-menu ul {
-      background: #E4E7EB; }
+      background: #E4E7EB;
+      position: absolute;
+      right: 0px;
+      width: inherit; }
       .top-bar .drop-menu ul li {
         display: flex;
         align-items: center;
@@ -84,11 +61,12 @@
         border-top: 1px solid white;
         border-bottom: 1px solid white; }
 
+.top-bar a {
+  position: relative; }
+
 .home-icon {
   width: 40px;
-  height: 40px;
-  position: relative;
-  left: 15px; }
+  height: 40px; }
 
 .add-btn {
   width: 120px;
@@ -100,10 +78,17 @@
   align-items: center;
   justify-content: center; }
 
+.add-new-toggle {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  z-index: 2;
+  width: 100%;
+  height: 30vh; }
+
 .add-new-sec {
   background: #E4E7EB;
   position: absolute;
-  top: 20vh;
   z-index: 2;
   width: 100%;
   height: 30vh;
@@ -127,11 +112,18 @@
 
 .center-sec {
   position: relative;
-  max-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 50vh;
   border-bottom: 1px solid white; }
+  .center-sec .bg-img-container {
+    height: 50vh; }
+  .center-sec .bg-img {
+    opacity: 0.4;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100vw; }
   .center-sec .desc-sec {
     position: absolute;
     display: flex;
@@ -139,22 +131,25 @@
     width: 250px;
     height: 10vh;
     background: #F1F5F9; }
+    .center-sec .desc-sec .desc-icon {
+      position: absolute;
+      left: 15px;
+      width: 40px;
+      height: 40px; }
     .center-sec .desc-sec .desc-text {
       position: absolute;
       left: 100px; }
 
 .nav-list {
   position: absolute;
+  max-height: 40%;
+  overflow: auto;
   bottom: 0;
   left: 0;
-  right: 0;
-  max-height: 40%;
-  bottom: 0px;
-  overflow: auto; }
+  right: 0; }
   .nav-list .nav-item {
     position: relative; }
     .nav-list .nav-item .nav-text {
-      color: black;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -164,10 +159,15 @@
       border-top: 1px solid white;
       border-bottom: 1px solid white; }
     .nav-list .nav-item .nav-icon {
+      position: absolute;
       width: 40px;
       height: 40px;
-      position: absolute;
+      display: flex;
       top: 15px;
       right: 15px; }
+      .nav-list .nav-item .nav-icon img {
+        align-items: center;
+        margin: 0 auto;
+        width: 70%; }
 
 /*# sourceMappingURL=style.css.map */
