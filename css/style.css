@@ -61,8 +61,9 @@
         border-top: 1px solid white;
         border-bottom: 1px solid white; }
 
-.top-bar a {
-  position: relative; }
+.top-bar .home-icon-cont {
+  position: relative;
+  left: 15px; }
 
 .home-icon {
   width: 40px;
@@ -81,9 +82,10 @@
 .add-new-toggle {
   display: none;
   position: absolute;
+  left: 10vw;
   top: 20vh;
   z-index: 2;
-  width: 100%;
+  width: 80%;
   height: 30vh; }
 
 .add-new-sec {
