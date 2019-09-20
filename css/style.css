@@ -44,15 +44,15 @@
     width: 190px;
     position: absolute;
     top: 10vh;
-    right: 0px;
-    -webkit-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75); }
+    right: 0px; }
     .top-bar .drop-menu ul {
       background: #E4E7EB;
       position: absolute;
       right: 0px;
-      width: inherit; }
+      width: inherit;
+      -webkit-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75); }
       .top-bar .drop-menu ul li {
         display: flex;
         align-items: center;
@@ -102,6 +102,10 @@
   -webkit-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 40px -9px rgba(0, 0, 0, 0.75); }
+  .add-new-sec .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
   .add-new-sec input {
     height: 5vh;
     width: 80%; }
@@ -142,9 +146,26 @@
       position: absolute;
       left: 100px; }
 
+.stat-sec {
+  display: none; }
+
+.direction-ind-up {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  bottom: 36.5vh;
+  right: 10px; }
+
+.direction-ind-down {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  bottom: 1vh;
+  right: 10px; }
+
 .nav-list {
   position: absolute;
-  max-height: 40%;
+  height: 40vh;
   overflow: auto;
   bottom: 0;
   left: 0;
@@ -171,5 +192,55 @@
         align-items: center;
         margin: 0 auto;
         width: 70%; }
+
+@media only screen and (min-width: 1024px) {
+  .center-sec {
+    float: left;
+    width: 70vw;
+    max-height: 90vh;
+    border: none; }
+    .center-sec .bg-img-container {
+      height: 100%; }
+      .center-sec .bg-img-container .bg-img {
+        height: 90vh;
+        object-fit: cover;
+        width: 100%; }
+
+  .stat-sec {
+    display: inline;
+    background: #E4E7EB;
+    border-bottom: solid white 1px;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 30vw;
+    height: 50vh; }
+    .stat-sec h3 {
+      text-align: center;
+      padding-top: 5vh; }
+    .stat-sec .door-lock {
+      position: absolute;
+      right: 1vw;
+      top: 10vh;
+      float: right;
+      border: 1px solid white;
+      width: 120px;
+      border-radius: 0;
+      overflow: hidden; }
+      .stat-sec .door-lock select {
+        padding: 5px 8px;
+        width: 130%;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+        border-radius: 0; }
+
+  .nav-list {
+    width: 30vw;
+    bottom: 0;
+    right: 0;
+    left: 70vw; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -30,14 +30,15 @@
       position: absolute;
       top:10vh;
       right: 0px;
-      -webkit-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
-      -moz-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
-      box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
+
       ul{
         background: #E4E7EB;
         position: absolute;
         right: 0px;
         width: inherit;
+        -webkit-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
         li{
           display: flex;
           align-items: center;
@@ -97,7 +98,13 @@
   -webkit-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.75);
-  // display: none;
+
+  .close-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
 
   input{
     height: 5vh;
@@ -158,12 +165,29 @@
 }
 //center section ends here---------------
 
+.stat-sec{
+  display: none;
+}
+.direction-ind-up{
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  bottom: 36.5vh;
+  right: 10px;
+}
+.direction-ind-down{
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  bottom: 1vh;
+  right: 10px;
+}
 
 //navigation section---------------
 .nav-list{
   // set max height setting with overflow auto
   position: absolute;
-  max-height: 40%;
+  height: 40vh;
   overflow: auto;
   bottom: 0;
   left: 0;
@@ -196,3 +220,81 @@
   }
 }
 //navigation section ends here---------------
+
+
+
+//media queries ipad landscape
+
+@media only screen and (min-width :1024px){
+
+.center-sec{
+  float: left;
+  width: 70vw;
+  max-height: 90vh;
+  border: none;
+  .bg-img-container{
+    height: 100%;
+    .bg-img{
+      height: 90vh;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.stat-sec{
+  display: inline;
+  background: #E4E7EB;
+  border-bottom: solid white 1px;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  width: 30vw;
+  height: 50vh;
+  h3{
+    text-align: center;
+    padding-top: 5vh;
+  }
+  .door-lock{
+    position: absolute;
+    right: 1vw;
+    top: 10vh;
+    float: right;
+    border: 1px solid white;
+    width: 120px;
+    border-radius: 0;
+    overflow: hidden;
+    // width: 100px;
+    // height: 30px;
+    // border: 1px solid white;
+    select{
+      padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+      // background: white;
+      border-radius: 0;
+      // border: none;
+      // font-size: 15px;
+      // height: 100%;
+
+    }
+  }
+
+}
+.nav-list{
+  width: 30vw;
+  bottom: 0;
+  right: 0;
+  left: 70vw;
+  .nav-text{
+    // height: 20vh;
+
+  }
+
+}
+
+}
