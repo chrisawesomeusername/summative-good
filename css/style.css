@@ -218,24 +218,54 @@
     .stat-sec h3 {
       text-align: center;
       padding-top: 5vh; }
-    .stat-sec .door-lock {
-      position: absolute;
-      right: 1vw;
-      top: 10vh;
-      float: right;
-      border: 1px solid white;
-      width: 120px;
-      border-radius: 0;
-      overflow: hidden; }
-      .stat-sec .door-lock select {
-        padding: 5px 8px;
-        width: 130%;
-        border: none;
-        box-shadow: none;
-        background: transparent;
-        background-image: none;
-        -webkit-appearance: none;
-        border-radius: 0; }
+    .stat-sec .item {
+      height: auto; }
+    .stat-sec .item-1 {
+      border: solid white 1px; }
+      .stat-sec .item-1 .stat-sec-item {
+        position: absolute;
+        top: 15vh;
+        left: 4vw; }
+      .stat-sec .item-1 .door-lock {
+        position: absolute;
+        right: 4vw;
+        top: 15vh;
+        float: right;
+        border: 1px solid white;
+        width: 100px;
+        border-radius: 0;
+        overflow: hidden; }
+        .stat-sec .item-1 .door-lock select {
+          padding: 5px 8px;
+          border: none;
+          box-shadow: none;
+          background: transparent;
+          background-image: none;
+          -webkit-appearance: none;
+          border-radius: 0; }
+    .stat-sec .item-2 {
+      position: relative; }
+      .stat-sec .item-2 .stat-sec-item {
+        position: absolute;
+        top: 15vh;
+        left: 4vw; }
+      .stat-sec .item-2 .door-lock {
+        position: absolute;
+        right: 4vw;
+        top: 15vh;
+        float: right;
+        border: 1px solid white;
+        width: 100px;
+        border-radius: 0;
+        overflow: hidden; }
+        .stat-sec .item-2 .door-lock select {
+          padding: 5px 8px;
+          border: none;
+          box-shadow: none;
+          background: transparent;
+          background-image: none;
+          -webkit-appearance: none;
+          border-radius: 0; }
 
   .nav-list {
     width: 30vw;
