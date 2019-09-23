@@ -3,7 +3,7 @@
 .top-bar{
   width: 100%;
   height: 10vh;
-  background: #2F353D;
+  background: $top-bar-color;
   position: relative;
   display: flex;
   align-items: center;
@@ -66,7 +66,7 @@
 .add-btn{
   width: 120px;
   height: 5vh;
-  background: #0085BA;
+  background: $button-color;
   position: absolute;
   right: 15px;
   display: flex;
@@ -85,7 +85,7 @@
 
 }
 .add-new-sec{
-  background: #E4E7EB;
+  background: $menu-color;
   position: absolute;
   z-index: 2;
   width: 100%;
@@ -113,7 +113,7 @@
   .confirm-btn{
     width: 120px;
     height: 5vh;
-    background: #0085BA;
+    background: $button-color;
     display: flex;
     justify-content: center;
   }
@@ -148,7 +148,7 @@
     align-items: center;;
     width: 250px;
     height: 10vh;
-    background: #F1F5F9;
+    background: $menu-color;
     .desc-icon{
       position: absolute;
       left: 15px;
@@ -200,7 +200,7 @@
     align-items: center;
     width: auto;
     height: 10vh;
-    background: #E4E7EB;
+    background: $menu-color;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     }
@@ -243,83 +243,43 @@
 }
 
 .stat-sec{
-  display: inline;
-  background: #E4E7EB;
+  display: block;
+  background: $menu-color;
   border-bottom: solid white 1px;
-  position: absolute;
+  float: right;
   top: 10vh;
   right: 0;
   width: 30vw;
   height: 50vh;
+  .stat-sec:after{
+    clear: both;
+  }
   h3{
     text-align: center;
     padding-top: 5vh;
+
   }
+
   .item{
-    height: auto;
-  }
-
-  .item-1{
-    border: solid white 1px;
-    .stat-sec-item{
-      position: absolute;
-      top: 15vh;
-      left: 4vw;
-    }
-    .door-lock{
-      position: absolute;
-      right: 4vw;
-      top: 15vh;
-      float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    .stat-item{
       border: 1px solid white;
       width: 100px;
       border-radius: 0;
-      overflow: hidden;
       select{
-        padding: 5px 8px;
         border: none;
-        box-shadow: none;
         background: transparent;
-        background-image: none;
-        -webkit-appearance: none;
-        border-radius: 0;
-
-      }
-    }
-
-  }
-  .item-2{
-    position: relative;
-    .stat-sec-item{
-      position: absolute;
-      top: 15vh;
-      left: 4vw;
-    }
-    .door-lock{
-      position: absolute;
-      right: 4vw;
-      top: 15vh;
-      float: right;
-      border: 1px solid white;
-      width: 100px;
-      border-radius: 0;
-      overflow: hidden;
-      select{
-        padding: 5px 8px;
-        border: none;
-        box-shadow: none;
-        background: transparent;
-        background-image: none;
-        -webkit-appearance: none;
         border-radius: 0;
       }
     }
-
   }
-
-
-
 }
+
 .nav-list{
   width: 30vw;
   bottom: 0;
